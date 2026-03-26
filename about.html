@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CartNova</title>
+    <link rel="stylesheet" href="enhanced-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    CartNova
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 2rem;">About CartNova</h1>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>CartNova was founded with a simple mission: to make premium fashion accessible to everyone. We believe that style shouldn't come with a hefty price tag, and quality shouldn't be compromised for affordability.</p>
+                    
+                    <p>Since our inception, we've been committed to curating the best collection of men's and women's clothing that combines comfort, style, and durability. Every piece in our collection is carefully selected to ensure it meets our high standards.</p>
+
+                    <h2 style="margin-top: 2rem;">Our Values</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: #111827; margin-right: 0.5rem;"></i> <strong>Quality First:</strong> We never compromise on the quality of our products</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: #111827; margin-right: 0.5rem;"></i> <strong>Customer Satisfaction:</strong> Your happiness is our priority</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: #111827; margin-right: 0.5rem;"></i> <strong>Affordable Fashion:</strong> Premium quality at accessible prices</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: #111827; margin-right: 0.5rem;"></i> <strong>Fast Service:</strong> Quick processing and delivery</li>
+                    </ul>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080" alt="About CartNova" style="border-radius: 0.5rem;">
+                </div>
+            </div>
+
+            <div class="team-section" style="margin-top: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Why Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Shipping</h3>
+                        <p>Quick order processing and delivery to your doorstep</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>COD Available</h3>
+                        <p>Pay cash on delivery for your convenience</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-undo"></i>
+                        <h3>Easy Returns</h3>
+                        <p>Hassle-free return policy for your peace of mind</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Our customer service team is always here to help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CartNova</h3>
+                    <p>Your destination for premium fashion and style.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CartNova. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .about-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 3rem;
+        }
+
+        .about-text h2 {
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #4b5563;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

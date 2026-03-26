@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - CartNova</title>
+    <link rel="stylesheet" href="enhanced-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    CartNova
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero -->
+    <section class="shop-hero">
+        <div class="shop-hero-content">
+            <h1>Shop Our Collection</h1>
+            <p>Discover premium clothing for every style and occasion. Quality fashion at unbeatable prices.</p>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="quick-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" onclick="filterByGender('all')">All Products</button>
+                <button class="category-btn" onclick="filterByGender('men')">Men's Collection</button>
+                <button class="category-btn" onclick="filterByGender('women')">Women's Collection</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <div class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3><i class="fas fa-filter"></i> Filters</h3>
+                        
+                        <div class="filter-group">
+                            <h4>Gender</h4>
+                            <label><input type="radio" name="gender" value="all" checked onchange="applyFilters()"> All</label>
+                            <label><input type="radio" name="gender" value="men" onchange="applyFilters()"> Men</label>
+                            <label><input type="radio" name="gender" value="women" onchange="applyFilters()"> Women</label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Category</h4>
+                            <select id="categoryFilter" onchange="applyFilters()">
+                                <option value="all">All Categories</option>
+                                <option value="T-Shirts">T-Shirts</option>
+                                <option value="Jeans">Jeans</option>
+                                <option value="Hoodies">Hoodies</option>
+                                <option value="Casual Shirts">Casual Shirts</option>
+                                <option value="Dresses">Dresses</option>
+                                <option value="Tops">Tops</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Price Range</h4>
+                            <label><input type="radio" name="price" value="all" checked onchange="applyFilters()"> All Prices</label>
+                            <label><input type="radio" name="price" value="under-30" onchange="applyFilters()"> Under $30</label>
+                            <label><input type="radio" name="price" value="30-50" onchange="applyFilters()"> $30 - $50</label>
+                            <label><input type="radio" name="price" value="over-50" onchange="applyFilters()"> Over $50</label>
+                        </div>
+
+                        <button class="btn btn-secondary" onclick="resetFilters()">Reset Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Products -->
+                <div class="shop-main">
+                    <div class="shop-toolbar">
+                        <div class="product-count" id="productCount">Showing 8 products</div>
+                        <div class="sort-options">
+                            <label>Sort by:</label>
+                            <select id="sortBy" onchange="applyFilters()">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name: A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="shopProducts"></div>
+
+                    <div class="no-products" id="noProducts" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <h3>No products found</h3>
+                        <p>Try adjusting your filters to find what you're looking for.</p>
+                        <button class="btn btn-primary" onclick="resetFilters()">Clear All Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CartNova</h3>
+                    <p>Your destination for premium fashion and style.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CartNova. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartNova - Premium Fashion Store</title>
+    <link rel="stylesheet" href="enhanced-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    CartNova
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-decoration"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Premium Quality Fashion</span>
+                    </div>
+                    <h1>Upgrade Your Style with CartNova</h1>
+                    <p>Discover premium men's and women's fashion designed for comfort, style, and everyday confidence. Quality clothing that makes you stand out.</p>
+                    <div class="hero-buttons">
+                        <a href="shop.html?gender=men" class="btn btn-primary">
+                            <span>Shop Men's Collection</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="shop.html?gender=women" class="btn btn-secondary">
+                            <span>Shop Women's Collection</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Products</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9★</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-badge">
+                        <i class="fas fa-fire"></i>
+                        <span>Trending Now</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1758387813671-0f015663a550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwY291cGxlJTIwc3R5bGlzaCUyMGNsb3RoaW5nfGVufDF8fHx8MTc3MzMyNzQ4NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Fashion lifestyle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-shipping-fast"></i>
+                    <div class="trust-content">
+                        <h4>Free Shipping</h4>
+                        <p>On orders over $50</p>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="trust-content">
+                        <h4>Secure Payment</h4>
+                        <p>100% Protected</p>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-undo"></i>
+                    <div class="trust-content">
+                        <h4>Easy Returns</h4>
+                        <p>30-Day Guarantee</p>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-headset"></i>
+                    <div class="trust-content">
+                        <h4>24/7 Support</h4>
+                        <p>Always Here for You</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header-content">
+                    <span class="section-subtitle">Browse Collections</span>
+                    <h2 class="section-title">Featured Categories</h2>
+                    <p class="section-description">Explore our carefully curated collections for men and women</p>
+                </div>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Men's Fashion -->
+                <div class="category-section">
+                    <div class="category-section-header">
+                        <i class="fas fa-male"></i>
+                        <h3>Men's Fashion</h3>
+                    </div>
+                    <div class="category-items">
+                        <a href="shop.html?category=T-Shirts" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW4lMjB0LXNoaXJ0JTIwd2hpdGV8ZW58MXx8fHwxNzczMzI2NTA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="T-Shirts">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">T-Shirts</span>
+                        </a>
+                        <a href="shop.html?category=Hoodies" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1772521239245-844fe3a0d66e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW4lMjBob29kaWUlMjBjYXN1YWx8ZW58MXx8fHwxNzczMzI2NTA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Hoodies">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Hoodies</span>
+                        </a>
+                        <a href="shop.html?category=Casual-Shirts" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1772290660319-ed78b7a2b469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW4lMjBjYXN1YWwlMjBzaGlydCUyMGZvbGRlZHxlbnwxfHx8fDE3NzMzMjY1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Casual Shirts">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Casual Shirts</span>
+                        </a>
+                        <a href="shop.html?category=Jeans" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1530062329328-9734c43ae31b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW4lMjBibHVlJTIwamVhbnMlMjBkZW5pbXxlbnwxfHx8fDE3NzMyNDEyMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Jeans">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Jeans</span>
+                        </a>
+                        <a href="shop.html?category=Jackets" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1551283279-166ab6d719af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW4lMjBqYWNrZXQlMjBsZWF0aGVyfGVufDF8fHx8MTc3MzMyNjUwOHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Jackets">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Jackets</span>
+                        </a>
+                        <a href="shop.html?category=Polo-Shirts" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1706007647543-460bfa7db776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW4lMjBwb2xvJTIwc2hpcnR8ZW58MXx8fHwxNzczMjMwNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Polo Shirts">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Polo Shirts</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Women's Fashion -->
+                <div class="category-section">
+                    <div class="category-section-header">
+                        <i class="fas fa-female"></i>
+                        <h3>Women's Fashion</h3>
+                    </div>
+                    <div class="category-items">
+                        <a href="shop.html?category=Dresses" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1721990336298-90832e791b5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbiUyMGRyZXNzJTIwZmFzaGlvbnxlbnwxfHx8fDE3NzMyMzMyNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dresses">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Dresses</span>
+                        </a>
+                        <a href="shop.html?category=Tops" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1730714311842-02cbac4e957f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbiUyMHRvcCUyMGJsb3VzZXxlbnwxfHx8fDE3NzMzMjY1MDl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Tops">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Tops</span>
+                        </a>
+                        <a href="shop.html?category=Hoodies" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1579662022252-8b13810fcef9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbiUyMGhvb2RpZSUyMHBpbmt8ZW58MXx8fHwxNzczMzI2NTA5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Hoodies">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Hoodies</span>
+                        </a>
+                        <a href="shop.html?category=Jeans" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1609831190577-04538764f438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbiUyMGplYW5zJTIwYmx1ZXxlbnwxfHx8fDE3NzMzMjY1MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Jeans">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Jeans</span>
+                        </a>
+                        <a href="shop.html?category=Activewear" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1596641211273-938aeaf926a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbiUyMGFjdGl2ZXdlYXIlMjB5b2dhfGVufDF8fHx8MTc3MzMyNjUxMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Activewear">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Activewear</span>
+                        </a>
+                        <a href="shop.html?category=Skirts" class="category-card">
+                            <img src="https://images.unsplash.com/photo-1653419403196-ab64c4c740c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbiUyMHNraXJ0JTIwZmFzaGlvbnxlbnwxfHx8fDE3NzMyOTM5MzV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Skirts">
+                            <div class="category-overlay"></div>
+                            <span class="category-name">Skirts</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header-content">
+                    <span class="section-subtitle">Best Sellers</span>
+                    <h2 class="section-title">Featured Products</h2>
+                    <p class="section-description">Handpicked favorites loved by our customers</p>
+                </div>
+                <a href="shop.html" class="btn btn-outline">
+                    <span>View All Products</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products-grid" id="featuredProducts"></div>
+        </div>
+    </section>
+
+    <!-- Why Choose CartNova -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header-content">
+                    <span class="section-subtitle">Our Promise</span>
+                    <h2 class="section-title">Why Choose CartNova</h2>
+                    <p class="section-description">We're committed to providing the best shopping experience</p>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>High-Quality Fabrics</h3>
+                    <p>Premium materials that last longer and feel better</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Affordable Fashion</h3>
+                    <p>Great prices without compromising on quality</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Processing</h3>
+                    <p>Quick order handling and speedy delivery</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cash on Delivery</h3>
+                    <p>Pay conveniently when you receive your order</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Customer First</h3>
+                    <p>Your satisfaction is our top priority</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Upgrade Your Wardrobe?</h2>
+                    <p>Join thousands of satisfied customers and discover your perfect style today</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="shop.html" class="btn btn-primary btn-large">
+                        <span>Start Shopping</span>
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shopping-bag"></i> CartNova</h3>
+                    <p>Your destination for premium fashion and style. Quality clothing that makes a difference.</p>
+                    <div class="footer-newsletter">
+                        <h4>Subscribe to our newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Return Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> support@cartnova.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CartNova. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-text">
+                <h4>We value your privacy</h4>
+                <p>We use cookies to enhance your browsing experience and analyze our traffic. By continuing to use this site, you agree to our use of cookies.</p>
+            </div>
+            <button class="btn btn-primary" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
